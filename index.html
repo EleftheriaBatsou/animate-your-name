@@ -1,0 +1,95 @@
+<html>
+
+<head>
+	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	
+	<!--Links -->
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- end of links-->
+
+	
+	<style>
+		body {
+			background-color: #4CF3FF; /* light blue */
+			color: #B24900; /* brown */
+		}
+
+		a:link    {color:#B24900;  text-decoration:none}
+		a:visited {color:#B24900; text-decoration:none}
+		a:hover   {color:#FF8633; text-decoration:underline} /* Yellow */
+
+	</style>
+	
+	
+	
+	
+	
+</head>
+
+
+
+<body>  
+  <div class="container-fluid text-center">
+       
+    
+    
+    <div class="row text-center"> <!-- for main -->
+      <canvas id="myCanvas"></canvas>
+      <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+   </div> <!-- end main -->
+    
+    
+     <div class="row text-center"> <!-- for footer -->
+      <h5><a href="http://www.eleftheriabatsou.com" target="_blank">Eleftheria Batsou</a> | <a href="http://codepen.io/EleftheriaBatsou" target="_blank">Projects</a></h5>
+    </div> <!-- end footer -->
+  
+  </div> <!-- end class container-fluid --> 
+</body>
+   
+   
+   <script src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
+   
+	<script>
+		/* Colors are in HSL
+
+		You can find some beautiful colors here: 
+		http://rgb.to/hsl/40,100,60
+
+		*/
+
+		/* Choose your colors :)*/
+		var redDark = [0, 73, 41];
+		var pinkToPurple = [328, 81, 29];
+		var bluish = [251, 69, 34];
+		var blue = [216, 85, 34];
+		var blueGreen = [182, 100, 20];
+		var green = [124, 55, 24]
+
+		/* Type your name*/
+		var myName = "Eleftheria";
+		/* Use an array of colors*/
+		var letterColors = [redDark, pinkToPurple, bluish, blue, blueGreen, green];
+
+		/* Shape of letters (square || circle)*/
+		/* I will pick "square" that s why I commented on circle*/
+		bubbleShape = "square";
+		/*
+		bubbleShape = "circle";
+		*/
+
+		/* Call the function drawName, it takes two parameters, one for the name and one for the color's array*/
+		drawName(myName, letterColors);
+		/* Call function bounceBubbles. This function does not take any parameters */
+		bounceBubbles();
+	</script>
+
+
+
+</html>
